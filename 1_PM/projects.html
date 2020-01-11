@@ -13,7 +13,7 @@
         <title>Charles Onesti</title>
     </head>
     <body>
-        <!--Bootstrap navigation bar-->
+        <!--Navigation bar-->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Charles Onesti</a>
@@ -65,6 +65,11 @@
                             }
                             document.querySelector('body').style.backgroundColor = this.value;
                             document.querySelector('body').style.color = 'white';
+                            var x, i;
+                            x = document.querySelectorAll(".card-text");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.color = 'black';
+                            }
                         }
                         if(this.value === '#A51C30')
                         {
@@ -77,6 +82,11 @@
                             }
                             document.querySelector('body').style.backgroundColor = '#A51C30';
                             document.querySelector('body').style.color = '#b0b2b5';
+                            var x, i;
+                            x = document.querySelectorAll(".card-text");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.color = 'black';
+                            }
                         }
                     }
                 </script>
@@ -84,47 +94,71 @@
         </nav>
         <!--Page banner-->
         <div class="banner">
-            <a href="https://www.comune.fi.it/"><img class="banner-img" src="img/firenze.jpg" alt="banner"></a>
+            <img class="banner-img" src="img/cortina.jpg" alt="banner">
         </div>
         <!--Page body-->
         <div class="container">
-            <h2 class="my-4">About Me</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>My name is Charles Onesti. I am a student studying Computer Science in the Harvard class of 2023.  This year I have been expanding my knowledge in Computer Science and aquiring the foundational skills to be a profiecient software engineer and data scientist.  In recent years I have worked as a product manager intern at <a href="https://www.neptuneweb.com/">Neptune Web</a> and a design engineer intern at <a href="https://creativeengineering.com/">Creative Engineering</a>.  This website contains a portfolio of the completed and ongoing projects I have been working on in school or in my free time.  </p>
-                    <p>Learn more about me on the <a href="interests.html">Interests</a> page</p>
-                </div>
-                <div class="col-md-3">
-                    <a href="https://www.nutella.com/us/en/"><img class='profilepic'src="img/profilepic.png" alt="Me"></a>
-                </div>
-            </div>
+            <h2 class="my-4">Projects</h2>
+        </div>
+        <div class="container">
             <table>
                 <tr>
-                    <td>la table</td>
-                    <td>le conclusion</td>
+                    <td>
+                        <div class="col-lg-6 portfolio-item">
+                            <div class="card " style="width: 18rem;">
+                                <a href="bronxshelterproject.html">
+                                    <img src="http://www.bronxshelterproject.org/wp-content/uploads/2018/01/BSP-Logo-300x230.png" class="card-img-top" alt="Bronx Shelter Project">
+                                </a>
+                                <div class="card-body">
+                                    <h5><a href="bronxshelterproject.html" class="card-title">Bronx Shelter Project</a></h5>
+                                    <p class="card-text">A charity project that supplies Bronx homeless shelters with living essentials.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-lg-6 portfolio-item">
+                            <div class="card " style="width: 18rem;">
+                                <a href="studylabs.html">
+                                    <img src="img/owllogo.png" class="card-img-top" alt="StudyLabs">
+                                </a>
+                                <div class="card-body">
+                                    <h5><a href="studylabs.html" class="card-title">StudyLabs</a></h5>
+                                    <p class="card-text">A mobile app that creates study groups for college students by matching classes and interests.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td>le inclusion</td>
-                    <td>le chauffeur</td>
+                    <td>
+                        <div class="col-lg-6 portfolio-item">
+                            <div class="card " style="width: 18rem;">
+                                <a href="studylabs.html">
+                                    <img src="img/personicon.png" class="card-img-top" alt="Sample Essay">
+                                </a>
+                                <div class="card-body">
+                                    <h5><a href="img/purposeessay.pdf" class="card-title">Essay on Human Purpose</a></h5>
+                                    <p class="card-text">An essay sample about the human self and how philosophers have defined human purpose throughout history</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-lg-6 portfolio-item">
+                            <div class="card " style="width: 18rem;">
+                                <a href="#">
+                                    <!--<img src="#" class="card-img-top" alt="#">-->
+                                </a>
+                                <div class="card-body">
+                                    <h5><a href="#" class="card-title">More Projects Coming Soon</a></h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
             </table>
-            <p>Numbered List</p>
-            <ol>
-                <il></il>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ol>
-            <p>Bulleted List!</p>
-            <ul>
-                <li>dot</li>
-                <li>dot</li>
-                <li>dot</li>
-            </ul>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
     </body>
 </html>

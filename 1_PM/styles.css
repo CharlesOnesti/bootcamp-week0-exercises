@@ -1,0 +1,39 @@
+.navbar-toggler{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    color: black;
+}
+.navbar{
+    background-color: lightblue;
+}
+.navbar-brand{
+    color: black;
+    font-family: serif;
+    font-size: 30px;
+}
+
+.nav-link{
+    padding: 15px;
+    color: black;
+}
+.banner{
+    height: 350px;
+    overflow: hidden;
+}
+.banner-img{
+    display: block;
+}
+body{
+    background-color: lightblue;
+}
+.profilepic{
+    height: 462px;
+    width: 279px;
+}
+td{
+    padding: 50px;
+}
+.card-img-top{
+    height: 250px;
+}
